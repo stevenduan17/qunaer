@@ -71,6 +71,8 @@
   @import "~styles/varibles"
 
   .icons
+    margin-top .1rem
+
     >>> .swiper-slide
       display flex
       flex-wrap wrap

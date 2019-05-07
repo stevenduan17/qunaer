@@ -42,7 +42,7 @@
       background #ffffff
       text-align center
       margin .12rem .2rem
-      border-radius .32rem
+      border-radius .14rem
       color #ccc
 
     .right
