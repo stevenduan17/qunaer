@@ -10,5 +10,6 @@ module.exports = {
       .set('components', resolve('src/components'))
       .set('common', resolve('src/common'))
       .set('views', resolve('src/views'))
+      .set('styles', resolve('src/common/styles'))
   }
 }
