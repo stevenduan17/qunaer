@@ -6,7 +6,9 @@
     <div class="search">
       <span class="iconfont">&#xe632;</span> 输入城市/景点/游玩主题
     </div>
-    <div class="right">{{this.city}}<span class="iconfont">&#xe64a;</span></div>
+    <router-link to="/city">
+      <div class="right">{{this.city}}<span class="iconfont">&#xe64a;</span></div>
+    </router-link>
   </div>
 </template>
 
@@ -29,7 +31,7 @@
     height .86rem
     display flex
     line-height .86rem
-    background #00bcd4
+    background $bg-color
     color #ffffff
 
     .left
@@ -55,6 +57,7 @@
       width 1.24rem
       float right
       text-align center
+      color white
 
       span
         margin-left .1rem
