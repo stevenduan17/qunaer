@@ -1,0 +1,148 @@
+{
+  "city": "武汉",
+  "icons": [
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+      "title": "景点门票"
+    },
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+      "title": "一日游"
+    },
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+      "title": "武汉必游"
+    },
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+      "title": "亲子游"
+    },
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+      "title": "游乐场"
+    },
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+      "title": "动植物园"
+    },
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+      "title": "踏青赏花"
+    },
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png",
+      "title": "武汉欢乐谷"
+    },
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+      "title": "极地海洋"
+    },
+    {
+      "icon": "http://img1.qunarzz.com/piao/fusion/1803/17/99402a22ce4af302.png",
+      "title": "东湖绿道"
+    }
+  ],
+  "swipers": [
+    {
+      "id": 1,
+      "url": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/87a224d0349d94a11e97f31aa1aba4f5.jpg_750x200_1f78af87.jpg"
+    },
+    {
+      "id": 2,
+      "url": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/e0c5d91cb9b435518bb223b81b70874e.jpg_750x200_f2d5c66a.jpg"
+    },
+    {
+      "id": 3,
+      "url": "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/e9f92741ef8b1cb0472ced96150d0d1c.jpg_750x200_1f0a2392.jpg"
+    }
+  ],
+  "recommends": [
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg",
+      "title": "武汉海昌极地海洋公园",
+      "desc": "在“海底两万里”鱼你共舞"
+    }
+  ],
+  "weekends": [
+    {
+      "url": "http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg",
+      "title": "武汉必打卡",
+      "desc": "到武汉感受神奇的热干面之都"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg",
+      "title": "武汉必打卡",
+      "desc": "到武汉感受神奇的热干面之都"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg",
+      "title": "武汉必打卡",
+      "desc": "到武汉感受神奇的热干面之都"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg",
+      "title": "武汉必打卡",
+      "desc": "到武汉感受神奇的热干面之都"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg",
+      "title": "武汉必打卡",
+      "desc": "到武汉感受神奇的热干面之都"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg",
+      "title": "武汉必打卡",
+      "desc": "到武汉感受神奇的热干面之都"
+    },
+    {
+      "url": "http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg",
+      "title": "武汉必打卡",
+      "desc": "到武汉感受神奇的热干面之都"
+    }
+  ]
+}

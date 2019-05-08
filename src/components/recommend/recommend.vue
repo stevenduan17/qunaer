@@ -2,7 +2,7 @@
   <div class="recommend">
     <div class="title">猜你喜欢</div>
     <ul>
-      <li class="item border-bottom" v-for="(item,index) of list" :key="index">
+      <li class="item border-bottom" v-for="(item,index) of recommends" :key="index">
         <img :src="item.url" alt="">
         <div class="content">
           <p class="content-title">{{item.title}}</p>
@@ -17,65 +17,8 @@
 <script>
   export default {
     name: 'recommend',
-    data () {
-      return {
-        list: [
-          {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          },
-          {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/p0/1504/47/4730a0c01664b63d.water.jpg_200x200_d7f52253.jpg',
-            title: '武汉海昌极地海洋公园',
-            desc: '在“海底两万里”鱼你共舞'
-          }
-        ]
-      }
+    props: {
+      recommends: Array
     }
   }
 </script>

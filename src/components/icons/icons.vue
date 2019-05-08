@@ -1,5 +1,5 @@
 <template>
-  <div class="icons">
+  <div class="icons" :options="swiperOption">
     <swiper>
       <swiper-slide v-for="(page,index) of pages" :key="index">
         <div v-for="item of page" :key="item.title" class="icon">
@@ -14,47 +14,20 @@
 <script>
   export default {
     name: 'icons',
+    props: {
+      icons: Array
+    },
     data () {
       return {
-        list: [
-          {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-            title: '景点门票'
-          }, {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-            title: '一日游'
-          }, {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-            title: '武汉必游'
-          }, {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png',
-            title: '亲子游'
-          }, {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png',
-            title: '游乐场'
-          }, {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-            title: '动植物园'
-          }, {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png',
-            title: '踏青赏花'
-          }, {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png',
-            title: '武汉欢乐谷'
-          }, {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png',
-            title: '极地海洋'
-          }, {
-            icon: 'http://img1.qunarzz.com/piao/fusion/1803/17/99402a22ce4af302.png',
-            title: '东湖绿道'
-          }
-        ]
+        swiperOption: {
+          autoplay: false
+        }
       }
     },
     computed: {
       pages () {
         const pages = []
-        this.list.forEach((item, index) => {
+        this.icons.forEach((item, index) => {
           const page = Math.floor(index / 8)
           if (!pages[page]) {
             pages[page] = []

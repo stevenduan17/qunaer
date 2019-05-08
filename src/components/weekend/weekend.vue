@@ -2,7 +2,7 @@
   <div class="weekend">
     <div class="title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="(item,index) of list" :key="index">
+      <li class="item border-bottom" v-for="(item,index) of weekends" :key="index">
         <div class="image-wrapper">
           <img :src="item.url" alt="">
         </div>
@@ -18,33 +18,8 @@
 <script>
   export default {
     name: 'weekend',
-    data () {
-      return {
-        list: [
-          {
-            url: 'http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg',
-            title: '武汉必打卡',
-            desc: '到武汉感受神奇的热干面之都'
-          },
-          {
-            url: 'http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg',
-            title: '武汉必打卡',
-            desc: '到武汉感受神奇的热干面之都'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg',
-            title: '武汉必打卡',
-            desc: '到武汉感受神奇的热干面之都'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg',
-            title: '武汉必打卡',
-            desc: '到武汉感受神奇的热干面之都'
-          }, {
-            url: 'http://img1.qunarzz.com/sight/source/1505/d5/abe8a48a6ef8bf.jpg_r_640x214_7c41cc81.jpg',
-            title: '武汉必打卡',
-            desc: '到武汉感受神奇的热干面之都'
-          }
-        ]
-      }
+    props: {
+      weekends: Array
     }
   }
 </script>

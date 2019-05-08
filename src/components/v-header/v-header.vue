@@ -6,13 +6,19 @@
     <div class="search">
       <span class="iconfont">&#xe632;</span> 输入城市/景点/游玩主题
     </div>
-    <div class="right">城市<span class="iconfont">&#xe64a;</span></div>
+    <div class="right">{{this.city}}<span class="iconfont">&#xe64a;</span></div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'v-header'
+    name: 'v-header',
+    props: {
+      city: {
+        type: String,
+        default: '城市'
+      }
+    }
   }
 </script>
 
