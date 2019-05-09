@@ -1,22 +1,20 @@
 <template>
   <ul class="list">
-    <li v-for="item of words" :key="item" class="item">{{item}}</li>
+    <li v-for="(item,key) of cities" :key="key" class="item">{{key}}</li>
   </ul>
 </template>
 
 <script>
   export default {
     name: 'Alphabet',
-    data () {
-      return {
-        words: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N']
-      }
+    props: {
+      cities: Object
     }
   }
 </script>
 
 <style lang="stylus" scoped>
-  @import "~common/styles/varibles"
+  @import "~styles/varibles"
 
   .list
     position absolute

@@ -16,4 +16,6 @@ function get (url) {
 }
 
 const getInfo = get('/api/info')
-export { getInfo }
+const getCity = get('/api/city')
+
+export { getInfo, getCity }

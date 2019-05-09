@@ -18,7 +18,13 @@ module.exports = {
       app.get('/api/info', function (req, res) {
         res.json({
           error: 0,
-          data
+          data: data.info
+        })
+      })
+      app.get('/api/city', function (req, res) {
+        res.json({
+          error: 0,
+          data: data.city
         })
       })
     }
