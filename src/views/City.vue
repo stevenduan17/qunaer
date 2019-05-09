@@ -2,8 +2,8 @@
   <div>
     <city-header></city-header>
     <city-search></city-search>
-    <city-list :city="city"></city-list>
-    <alphabet :cities="city.cities"></alphabet>
+    <city-list :city="city" :letter="letter"></city-list>
+    <alphabet :cities="city.cities" @change="handleLetterChange"></alphabet>
   </div>
 </template>
 
@@ -19,13 +19,19 @@
     components: { Alphabet, CityList, CitySearch, CityHeader },
     data () {
       return {
-        city: {}
+        city: {},
+        letter: ''
       }
     },
     mounted () {
       getCity().then((city) => {
         this.city = city
       })
+    },
+    methods: {
+      handleLetterChange (letter) {
+        this.letter = letter
+      }
     }
   }
 </script>

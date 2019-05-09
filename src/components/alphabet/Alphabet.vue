@@ -1,6 +1,15 @@
 <template>
   <ul class="list">
-    <li v-for="(item,key) of cities" :key="key" class="item">{{key}}</li>
+    <li v-for="key of letters"
+        :key="key"
+        class="item"
+        @touchstart="handleTouchStart"
+        @touchmove="handleTouchMove"
+        @touchend="handleTouchEnd"
+        @click="handleClick"
+        :ref="key">
+      {{key}}
+    </li>
   </ul>
 </template>
 
@@ -8,7 +17,57 @@
   export default {
     name: 'Alphabet',
     props: {
-      cities: Object
+      cities: {
+        type: Object,
+        default () {
+          return {}
+        }
+      }
+    },
+    data () {
+      return {
+        isOnTouch: false,
+        startY: 0,
+        timer: null
+      }
+    },
+    computed: {
+      letters () {
+        const letters = []
+        for (let i in this.cities) {
+          // noinspection JSUnfilteredForInLoop
+          letters.push(i)
+        }
+        return letters
+      }
+    },
+    updated () {
+      this.startY = this.$refs['A'][0].offsetTop
+    },
+    methods: {
+      handleClick (e) {
+        this.$emit('change', e.target.innerText)
+      },
+      handleTouchStart () {
+        this.isOnTouch = true
+      },
+      handleTouchMove (e) {
+        if (this.isOnTouch) {
+          if (this.timer) {
+            clearTimeout(this.timer)
+          }
+          this.timer = setTimeout(() => {
+            const touchY = e.touches[0].clientY - 89
+            const index = Math.floor((touchY - this.startY) / 20)
+            if (index >= 0 && index < this.letters.length) {
+              this.$emit('change', this.letters[index])
+            }
+          }, 16)
+        }
+      },
+      handleTouchEnd () {
+        this.isOnTouch = false
+      }
     }
   }
 </script>

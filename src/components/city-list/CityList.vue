@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="area">
-        <div v-for="(item,key) of city.cities" :key="key">
+        <div v-for="(item,key) of city.cities" :key="key" :ref="key">
           <div class="title border-topbottom">{{key}}</div>
           <ul class="item-list">
             <li class="item border-bottom" v-for="i of item" :key="i.id">{{i.name}}</li>
@@ -41,10 +41,19 @@
         default () {
           return {}
         }
-      }
+      },
+      letter: String
     },
     mounted () {
       this.scroll = new BetterScroll(this.$refs.wrapper)
+    },
+    watch: {
+      letter () {
+        if (this.letter) {
+          const el = this.$refs[this.letter][0]
+          this.scroll.scrollToElement(el)
+        }
+      }
     }
   }
 </script>
@@ -54,7 +63,7 @@
   .list
     overflow hidden
     position absolute
-    top 1.68rem
+    top 1.78rem
     bottom 0
     left 0
     right 0
