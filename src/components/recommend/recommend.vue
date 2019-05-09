@@ -2,14 +2,19 @@
   <div class="recommend">
     <div class="title">猜你喜欢</div>
     <ul>
-      <li class="item border-bottom" v-for="(item,index) of recommends" :key="index">
+      <router-link
+        tag="li"
+        class="item border-bottom"
+        v-for="(item,index) of recommends"
+        :key="index"
+        :to="'/detail/'+index">
         <img :src="item.url" alt="">
         <div class="content">
           <p class="content-title">{{item.title}}</p>
           <p class="content-desc">{{item.desc}}</p>
           <button>查看详情</button>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
