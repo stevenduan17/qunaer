@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-header :city="info.city"></v-header>
+    <v-header></v-header>
     <v-swiper :swipers="info.swipers"></v-swiper>
     <icons :icons="info.icons"></icons>
     <recommend :recommends="info.recommends"></recommend>

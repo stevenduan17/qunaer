@@ -9,7 +9,9 @@
     </div>
     <div class="content" ref="content" v-show="keyword">
       <ul>
-        <li v-for="item in list" :key="item.id" class="border-bottom">{{item.name}}</li>
+        <li v-for="item in list" :key="item.id" class="border-bottom"
+            @click="chooseCity(item.name)">{{item.name}}
+        </li>
       </ul>
     </div>
   </div>
@@ -54,6 +56,12 @@
           }
           this.list = result
         }, 100)
+      }
+    },
+    methods: {
+      chooseCity (name) {
+        this.$store.commit('changeCity', name)
+        this.$router.push('/')
       }
     }
   }

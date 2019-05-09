@@ -7,20 +7,14 @@
       <span class="iconfont">&#xe632;</span> 输入城市/景点/游玩主题
     </div>
     <router-link to="/city">
-      <div class="right">{{this.city}}<span class="iconfont">&#xe64a;</span></div>
+      <div class="right">{{this.$store.state.city}}<span class="iconfont">&#xe64a;</span></div>
     </router-link>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'v-header',
-    props: {
-      city: {
-        type: String,
-        default: '城市'
-      }
-    }
+    name: 'v-header'
   }
 </script>
 
