@@ -15,6 +15,7 @@
   import Recommend from '@/components/recommend/recommend'
   import Weekend from '@/components/weekend/weekend'
   import { getInfo } from '@/common/api'
+  import { mapState } from 'vuex'
 
   export default {
     name: 'home',
@@ -27,11 +28,22 @@
           icons: [],
           recommends: [],
           weekends: []
-        }
+        },
+        lastCity: ''
       }
     },
     mounted () {
+      this.lastCity = this.city
       this._getInfo()
+    },
+    activated () {
+      if (this.lastCity !== this.city) {
+        this.lastCity = this.city
+        this._getInfo()
+      }
+    },
+    computed: {
+      ...mapState(['city'])
     },
     methods: {
       _getInfo () {
