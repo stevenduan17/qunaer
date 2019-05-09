@@ -20,6 +20,7 @@
 <!--suppress JSUnfilteredForInLoop -->
 <script>
   import BetterScroll from 'better-scroll'
+  import { mapMutations } from 'vuex'
 
   export default {
     name: 'city-search',
@@ -60,9 +61,11 @@
     },
     methods: {
       chooseCity (name) {
-        this.$store.commit('changeCity', name)
+        // this.$store.commit('changeCity', name)
+        this.changeCity(name)
         this.$router.push('/')
-      }
+      },
+      ...mapMutations(['changeCity'])
     }
   }
 </script>
