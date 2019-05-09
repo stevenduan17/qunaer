@@ -5,7 +5,7 @@
         <div class="title border-topbottom">当前城市</div>
         <div class="b-list">
           <div class="button-wrapper">
-            <div class="button">武汉</div>
+            <div class="button active">武汉</div>
           </div>
         </div>
       </div>
@@ -59,6 +59,7 @@
 </script>
 
 <style lang="stylus" scoped>
+  @import "~styles/varibles"
 
   .list
     overflow hidden
@@ -90,6 +91,10 @@
             text-align center
             border .02rem solid #ccc
             border-radius .06rem
+
+          .active
+            color white
+            background $bg-color
 
       .item-list
         line-height .76rem

@@ -1,7 +1,7 @@
 <template>
   <div>
     <city-header></city-header>
-    <city-search></city-search>
+    <city-search :cities="city.cities"></city-search>
     <city-list :city="city" :letter="letter"></city-list>
     <alphabet :cities="city.cities" @change="handleLetterChange"></alphabet>
   </div>
@@ -35,7 +35,3 @@
     }
   }
 </script>
-
-<style lang="stylus" scoped>
-
-</style>
