@@ -36,6 +36,13 @@
           { title: '特惠票' }
         ]
       }
+    },
+    mounted () {
+      // console.log(this.$route.params.id)
+    },
+    activated () {
+      // 获取动态路由参数
+      console.log(this.$route.params.id)
     }
   }
 </script>
