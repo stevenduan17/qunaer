@@ -7,16 +7,19 @@
         <div class="count"><span class="iconfont">&#xe626;</span> 3</div>
       </div>
     </div>
-    <gallery v-show="showGallery" @close="closeGallery"></gallery>
+    <fade>
+      <gallery v-show="showGallery" @close="closeGallery"></gallery>
+    </fade>
   </div>
 </template>
 
 <script>
   import Gallery from '@/components/gallery/Gallery'
+  import Fade from '@/components/fade/Fade'
 
   export default {
     name: 'Banner',
-    components: { Gallery },
+    components: { Fade, Gallery },
     data () {
       return {
         showGallery: false
